@@ -1,0 +1,422 @@
+@font-face {
+    font-family: 'BankGothic Md BT';
+    src: url('fonts/BankGothicMediumBT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bahnschrift', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {   
+    color: #fff;
+    background-image: url('images/dark-tech-glowing-background-picjumbo-com.jpg');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed;
+}
+
+#header {
+    width: 100%;
+    height: 20%;
+    background-image: url("images/WhatsApp\ Image\ 2024-08-01\ at\ 4.48.58\ PM-Photoroom.png"); 
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+   
+}
+#bg-video {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 80%;
+    height: 53%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#setmybackground
+{
+    width: 80%; /* Set the width of the div */
+    height: 100%;
+    margin:auto; /* Centers the div horizontally and adds a top and bottom margin of 50px */
+    background-color:rgba(0, 0, 255, 0.521); /* Set the background color of the div */
+   
+   
+    
+    border-radius: 0px; /* Optional: Adds rounded corners to the div */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: -2;
+   
+
+}
+
+.container {
+    padding: 0 10%;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1px 20px;
+   
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-family: 'BankGothic Md BT';
+}
+
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    color: #fff;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text p{
+    font-family: 'BankGothic Md BT';
+}
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    font-family: 'BankGothic Md BT';
+}
+
+.header-text h1 span {
+    font-family: 'BankGothic Md BT';
+    color: #ff004f;
+}
+
+/*------------------------------ About Section ------------------------------*/
+#about {
+    padding: 80px 0;
+    color: #ababab;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+.about-col-2 p{
+    background-color: rgba(0, 0, 0, 0.085);
+}
+
+.sub-title {
+    font-family: 'BankGothic Md BT';
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-family: 'BankGothic Md BT';
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+    font-family: 'BankGothic Md BT';
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*----------------------------- Services Section ----------------------------*/
+#services {
+    padding: 30px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    background-color: rgba(0, 0, 0, 0.085);
+}
+
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.095);
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    border-right: 15px;
+    font-family: 'BankGothic Md BT';   
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#skills,#education{
+    background-color: rgba(0, 0, 0, 0.085);
+}
+
+.services-list div:hover {
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+
+/*----------------------------- Portfolio Section ---------------------------*/
+#portfolio {
+    padding: 50px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    background-color: rgba(0, 0, 0, 0.085);
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.095);
+    padding: 30%;
+}
+
+.work img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'BankGothic Md BT';
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+/*------------------------------ Button Style ------------------------------*/
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+/*---------------------------- Contact Section -----------------------------*/
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+    font-family: 'BankGothic Md BT';
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*----------------------------- Copyright Section ----------------------------*/
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+#contact{
+    background-color: rgba(0, 0, 0, 0.085);
+}
+
+
+/*----------------------- CSS for Small Screens ------------------------------*/
+@media only screen and (max-width: 600px) {
+    #header {
+        /* Add styles for small screens here */
+    }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+   
+    <div id="header">
+        <video autoplay muted loop id="bg-video">
+            <source src="videos/vts_01.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+       
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web page Developer</p>
+                <h1>Hey, I'm <span>Shilpa Saju</span> <br> from Ayoor</h1>
+            </div>
+        </div>
+    </div> <div id="setmybackground">
+   
+    <!--------------------------------------------------------------------------------about---------------------------------------------------------------------------->
+    
+    <div id="about">
+        <div class="container">
+            <div class="about-col-1">
+               <!-- <img src="images/WhatsApp Image 2024-08-01 at 4.48.58 PM.jpeg"> -->
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><br>I did my graduation under Bsc Computer Science in Mar Thoma College of Science and Technology, Ayoor, which is affiliated with the University of Kerala.
+                    I am currently pursuing an MCA at Mar Thoma Institute of Information Technology, Ayoor, which is also affiliated with the University of Kerala.
+                    Additionally, I have completed a Medical Coding course under AAPC at Cardea Healthcare Solutions, Kannur.
+                    Given an opportunity, I shall utilize my academic knowledge and skills, along with the instructions and guidance from my superiors and peers, to improve the productivity of the organization and upskill myself.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div> 
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python/Django</span><br>Designing Web App interfaces</li>
+                        <li><span>Web Design</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2024</span><br>Master of Computer Applications (MCA) at Mar Thoma Institute of Information Technology (MIIT), Ayoor</li>
+                        <li><span>2021</span><br>Medical Coding at Cardea Healthcare Solutions, Kannur</li>
+                        <li><span>2018 - 2021</span><br>Bachelor of Computer Science (BSc) at Mar Thoma College of Science and Technology (MTCST), Ayoor</li>
+                        <li><span>2016 - 2018</span><br>Plus Two at Jawahar Higher Secondary School, Ayoor</li>
+                        <li><span>2015</span><br>SSLC at Govt Higher Secondary School Anchal, West</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------services-------------------------------------------------------------->
+   
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1><br>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Python Django</h2>
+                    <p><br>Python Django is a high-level web framework that encourages rapid development and clean, pragmatic design, making it ideal for building robust and scalable web applications quickly. It comes with built-in features like an ORM, authentication, and an admin interface, which streamline the development process.</p>
+                    <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-thin fa-code-compare"></i>
+                    <h2>Web Design</h2>
+                    <p><br>Web design is the process of creating visually appealing and functional websites by combining elements like layout, color, graphics, and typography to enhance user experience and engagement.</p>
+                    <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p><br>App development involves creating software applications for mobile devices or computers, focusing on user experience, functionality, and performance to meet specific user needs and business goals.</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------------------------------------------------portfolio------------------------------------------------------------------>
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/waste.jfif" alt="E-Waste Management">
+                    <div class="layer">
+                        <h3>E-Waste Management</h3>
+                        <p>This app helps to resell electronic equipment and assist in repairs. Its primary advantage is to prevent environmental pollution when disposing of electronic equipment.</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            
+                <div class="work">
+                    <img src="images/3902184.jpg" alt="Pandemic Disease">
+                    <div class="layer">
+                        <h3>Pandemic Disease</h3>
+                        <p>This app aids the Government during a pandemic. Patients can book tests, find vacant quarantine centers, locate nearby hospitals, and download negative COVID certificates.</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            
+                <div class="work">
+                    <img src="images/Wavy_Lst-06_Single-10.jpg" alt="Personalized E-Learning">
+                    <div class="layer">
+                        <h3>Personalized E-Learning</h3>
+                        <p>This app helps students study topics online. Faculty monitor student progress, and HR posts relevant job vacancies from hiring companies.</p>
+                        <a href="#" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------contact-------------------------------------------------------------------->
+     
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1><br><br><br><br>
+                    <p>shilpasaju20@gmail.com</p>
+                    <p>shilpasaju25@gmail.com</p>
+                    <p>+91 8714555988</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shilpa-saju-a34281213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="images/icons8-linkedin-48.png" alt="LinkedIn"></a>
+                        <a href="https://www.instagram.com/_shi___pa_?utm_source=qr&igsh=MTV0d2UwZGRhYTY2dQ=="><img src="images/icons8-instagram-48.png" alt="Instagram"></a>
+                      
+                    </div>
+                    <a href="images/_SHILPA SAJU_.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Shilpa Saju</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+ </div></div>
+</body>
+</html>
